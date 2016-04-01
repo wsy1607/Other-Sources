@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>my first project</title>
+<meta name="description" content="my first web project">
+<meta name="keywords" content="HTML,CSS,JavaScript">
+<meta name="author" content="Shengying Wang">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="project1.css">
+<script src="jquery-1.11.3.min.js"></script>
+<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script>
+var data = [4, 8, 15, 16, 23, 42];
+d3.select(".chart")
+  .selectAll("div")
+    .data(data)
+  .enter().append("div")
+    .style("width", function(d) { return d * 10 + "px"; })
+    .text(function(d) { return d; });
+</script>
+</head>
+<body>
+
+<h1>My Personal Dashboard</h1>
+<hr>
+<h2>Sports Section</h2>
+<hr>
+<div class="img">
+<img src="zhibo8.jpg" alt="zhibo8" width="150" height="90">
+ <div class="desc">
+   <a href="http://zhibo8.cc" target="_blank">
+   http://zhibo8.cc
+   </a>
+  </div>
+</div>
+<div class="blank">
+</div>
+<div class="img">
+<img src="hoopchina.jpg" alt="hoopchina" width="150" height="90">
+ <div class="desc">
+   <a href="http://soccer.hupu.com" target="_blank">
+   http://soccer.hupu.com
+   </a>
+ </div>
+</div>
+<div class="blank">
+</div>
+<div class="img">
+<img src="sina.jpg" alt="sina" width="150" height="90">
+ <div class="desc">
+   <a href="http://sports.sina.com.cn" target="_blank">
+   http://sports.sina.com.cn
+   </a>
+ </div>
+</div>
+<br><br><br><br><br><br><br><br><br>
+<h2>Social and Entertainment Section</h2>
+<hr>
+<div class="img">
+<img src="linkedin.png" alt="linkedin" width="150" height="90">
+ <div class="desc">
+   <a href="http://linkedin.com" target="_blank">
+   http://linkedin.com
+   </a>
+  </div>
+</div>
+<div class="blank">
+</div>
+<div class="img">
+<img src="youtube.png" alt="youtube" width="150" height="90">
+ <div class="desc">
+   <a href="http://youtube.com" target="_blank">
+   http://youtube.com
+   </a>
+ </div>
+</div>
+<div class="blank">
+</div>
+<div class="img">
+<img src="craftshack.png" alt="craftshack" width="150" height="90">
+ <div class="desc">
+   <a href="http://craftshack.com" target="_blank">
+   http://craftshack.com
+   </a>
+ </div>
+</div>
+<br><br><br><br><br><br><br><br><br>
+<h2>Learning Section</h2>
+<hr>
+<div class="img">
+<img src="w3schools.png" alt="w3schools" width="150" height="90">
+ <div class="desc">
+   <a href="http://www.w3schools.com/js" target="_blank">
+   http://www.w3schools.com/js
+   </a>
+  </div>
+</div>
+<div class="blank">
+</div>
+<div class="img">
+<img src="hadoop.jpg" alt="pig latin" width="150" height="90">
+ <div class="desc">
+   <a href="https://pig.apache.org/docs/r0.10.0/basic.html" target="_blank">
+   https://pig.apache.org/docs
+   </a>
+ </div>
+</div>
+<div class="blank">
+</div>
+<div class="img">
+<img src="pandas.jpg" alt="pandas" width="150" height="90">
+ <div class="desc">
+   <a href="http://pandas.pydata.org/pandas-docs/stable/dsintro.html" target="_blank">
+   http://pandas.pydata.org
+   </a>
+ </div>
+</div>
+<br><br><br><br><br><br><br><br><br>
+<h2>Website Visits Statistics</h2>
+<hr>
+<br>
+<table border="1" style="width:40%">
+  <caption>Customer Info</caption>
+  <tr>
+    <th>Website</th>
+    <th>Total Clicks</th>
+    <th>Percentage</th>
+  </tr>
+  <tr>
+    <td>zhibo8</td>
+    <td>15</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>hoopchina</td>
+    <td>10</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>sina</td>
+    <td>15</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>linkedin</td>
+    <td>15</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>10</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>youtube</td>
+    <td>15</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>craftshack</td>
+    <td>5</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>w3schools</td>
+    <td>20</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>pig</td>
+    <td>10</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>pandas</td>
+    <td>5</td>
+    <td>50</td>
+  </tr>
+</table>
+<br>
+<ul style="list-style-type:disc">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+<br>
+
+</body>
+</html>

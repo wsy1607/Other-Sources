@@ -1,0 +1,171 @@
+Last login: Fri May  1 10:49:57 on ttys001
+localhost:~ uma$ ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures	Sites
+localhost:~ uma$ cd Documents/
+localhost:Documents uma$ ls
+Microsoft User Data	bountyme		raja			test
+localhost:Documents uma$ cd raja/
+localhost:raja uma$ ls
+client		lib		models		public		rough.js	routes		server
+localhost:raja uma$ meteor mongo
+MongoDB shell version: 2.6.7
+connecting to: 127.0.0.1:3001/meteor
+meteor:PRIMARY> show collections
+LinkedInCollection
+LinkedInCollectionTest
+bountyBoards
+events
+invites
+meteor_accounts_loginServiceConfiguration
+meteor_oauth_pendingCredentials
+positions
+roles
+system.indexes
+users
+meteor:PRIMARY> db.positions.find().prettey()
+2015-05-01T10:51:12.435-0700 TypeError: Object DBQuery: meteor.positions -> { } has no method 'prettey'
+meteor:PRIMARY> db.positions.find().pretty()
+{
+	"_id" : "FHomy4okejH67eaCB",
+	"workflow" : [
+		{
+			"number" : 0,
+			"action" : {
+				"type" : "advance",
+				"title" : "Approve Applicant"
+			},
+			"assignedTo" : {
+				"type" : "individual",
+				"profile" : {
+					"firstName" : "Ayyappa",
+					"lastName" : "Vemulkar",
+					"pictureUrl" : "https://media.licdn.com/mpr/mprx/0_-jYcUcsEX573HElfUuQMK84E3lA3DeYOZu6cjifEh6q8eZit4uoB1AcwFh83DZrfUuoB1t4ID9xhIuk04mUIPiJFe9xTIub14mUqZG2o_cED3sy7N0Ds4nGRH_5lCurGlD0R0pLZKS4"
+				},
+				"identity" : {
+					"userId" : "KMDKTsAbEqrtjxH3P"
+				}
+			},
+			"status" : "current",
+			"objective" : "Satisfy requirements"
+		},
+		{
+			"number" : 1,
+			"action" : {
+				"type" : "interview",
+				"title" : "Basic Fit Interview"
+			},
+			"assignedTo" : {
+				"type" : "individual",
+				"profile" : {
+					"firstName" : "Ayyappa",
+					"lastName" : "Vemulkar",
+					"pictureUrl" : "https://media.licdn.com/mpr/mprx/0_-jYcUcsEX573HElfUuQMK84E3lA3DeYOZu6cjifEh6q8eZit4uoB1AcwFh83DZrfUuoB1t4ID9xhIuk04mUIPiJFe9xTIub14mUqZG2o_cED3sy7N0Ds4nGRH_5lCurGlD0R0pLZKS4"
+				},
+				"identity" : {
+					"userId" : "KMDKTsAbEqrtjxH3P"
+				}
+			},
+			"status" : "pending",
+			"objective" : "Satisfy requirements"
+		},
+		{
+			"number" : 2,
+			"action" : {
+				"type" : "interview",
+				"title" : "Hiring Manager Approval"
+			},
+			"assignedTo" : {
+				"type" : "individual",
+				"profile" : {
+					"firstName" : "Ayyappa",
+					"lastName" : "Vemulkar",
+					"pictureUrl" : "https://media.licdn.com/mpr/mprx/0_-jYcUcsEX573HElfUuQMK84E3lA3DeYOZu6cjifEh6q8eZit4uoB1AcwFh83DZrfUuoB1t4ID9xhIuk04mUIPiJFe9xTIub14mUqZG2o_cED3sy7N0Ds4nGRH_5lCurGlD0R0pLZKS4"
+				},
+				"identity" : {
+					"userId" : "KMDKTsAbEqrtjxH3P"
+				}
+			},
+			"status" : "pending",
+			"objective" : "Satisfy requirements"
+		},
+		{
+			"number" : 3,
+			"action" : {
+				"type" : "interview",
+				"title" : "Hiring Manager Approval"
+			},
+			"assignedTo" : {
+				"type" : "individual",
+				"profile" : {
+					"firstName" : "Ayyappa",
+					"lastName" : "Vemulkar",
+					"pictureUrl" : "https://media.licdn.com/mpr/mprx/0_-jYcUcsEX573HElfUuQMK84E3lA3DeYOZu6cjifEh6q8eZit4uoB1AcwFh83DZrfUuoB1t4ID9xhIuk04mUIPiJFe9xTIub14mUqZG2o_cED3sy7N0Ds4nGRH_5lCurGlD0R0pLZKS4"
+				},
+				"identity" : {
+					"userId" : "KMDKTsAbEqrtjxH3P"
+				}
+			},
+			"status" : "pending",
+			"objective" : "Satisfy requirements"
+		},
+		{
+			"number" : 4,
+			"action" : {
+				"type" : "interview",
+				"title" : "Core Competency"
+			},
+			"assignedTo" : {
+				"type" : "individual",
+				"profile" : {
+					"firstName" : "Ayyappa",
+					"lastName" : "Vemulkar",
+					"pictureUrl" : "https://media.licdn.com/mpr/mprx/0_-jYcUcsEX573HElfUuQMK84E3lA3DeYOZu6cjifEh6q8eZit4uoB1AcwFh83DZrfUuoB1t4ID9xhIuk04mUIPiJFe9xTIub14mUqZG2o_cED3sy7N0Ds4nGRH_5lCurGlD0R0pLZKS4"
+				},
+				"identity" : {
+					"userId" : "KMDKTsAbEqrtjxH3P"
+				}
+			},
+			"status" : "pending",
+			"objective" : "Satisfy requirements"
+		},
+		{
+			"number" : 5,
+			"action" : {
+				"type" : "interview",
+				"title" : "Reference CHeck"
+			},
+			"assignedTo" : {
+				"type" : "individual",
+				"profile" : {
+					"firstName" : "Ayyappa",
+					"lastName" : "Vemulkar",
+					"pictureUrl" : "https://media.licdn.com/mpr/mprx/0_-jYcUcsEX573HElfUuQMK84E3lA3DeYOZu6cjifEh6q8eZit4uoB1AcwFh83DZrfUuoB1t4ID9xhIuk04mUIPiJFe9xTIub14mUqZG2o_cED3sy7N0Ds4nGRH_5lCurGlD0R0pLZKS4"
+				},
+				"identity" : {
+					"userId" : "KMDKTsAbEqrtjxH3P"
+				}
+			},
+			"status" : "pending",
+			"objective" : "Satisfy requirements"
+		}
+	],
+	"bountyBoardId" : "DnFJqeisR3KWWEPH8",
+	"jobOverview" : {
+		"companyName" : "Cisco",
+		"department" : "Technology",
+		"title" : "Software Engineer Backend",
+		"location" : "San Francisco",
+		"details" : {
+			"requirements" : "None",
+			"salaryMin" : 2000,
+			"salaryMax" : 3300,
+			"equityMin" : 202,
+			"equityMax" : 2
+		}
+	},
+	"userId" : "KMDKTsAbEqrtjxH3P",
+	"status" : "Pending",
+	"submitted" : ISODate("2015-04-30T21:14:39.095Z")
+}
+meteor:PRIMARY> 
